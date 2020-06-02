@@ -8,6 +8,27 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
+        leading: Icon(
+          Icons.menu,
+          color: Colors.white,
+        ),
+        actions: [
+          DropdownButton(
+            icon: Icon(
+              Icons.more_vert,
+              color: Colors.white,
+            ),
+            items: ['Contact', 'About Us']
+                .map(
+                  (value) => DropdownMenuItem(
+                    child: Text(value),
+                    value: value,
+                  ),
+                )
+                .toList(),
+            onChanged: (String value) {},
+          )
+        ],
       ),
       body: Column(
         children: [
