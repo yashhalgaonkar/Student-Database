@@ -1,6 +1,6 @@
-# student_database_flutter
+# Student Database System
 
-A new Flutter project.
+A Flutter app to manage student database.
 
 ## Getting Started
 
